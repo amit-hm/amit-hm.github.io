@@ -74,15 +74,36 @@ a:hover {
   text-decoration: none;
 }
 
-body,
+
+body {
+  color: #222;
+  background: #fff;
+  font: 100% system-ui;
+}
+a {
+  color: #0033cc;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background: #000000;
+  }
+
+  body a {
+    color: #809fff;
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px
+  }
+}
+
+
 td,
 th,
 tr,
 p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
-}
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -91,7 +112,7 @@ strong {
 
 heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 26px;
 }
 
 papertitle {
@@ -102,7 +123,7 @@ papertitle {
 
 name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 40px;
 }
 
 .one {
